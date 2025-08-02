@@ -3,7 +3,7 @@ import { FaStar } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section className='flex h-screen flex-col items-center justify-center bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/dot-pattern-redical.svg)] bg-cover bg-center pb-16 text-sm text-slate-800 md:px-16 lg:px-24 xl:px-32'>
+    <section className='flex bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/dot-pattern-redical.svg)] bg-cover bg-center pb-16 text-sm text-slate-800 md:px-16 lg:px-24 xl:px-32'>
       <div className='mt-24 flex w-full flex-col items-center justify-between gap-20 lg:flex-row'>
         <div className='max-md:px-4 lg:w-1/2'>
           <h1 className='max-w-lg bg-gradient-to-r from-black to-slate-600 bg-clip-text text-5xl font-semibold text-transparent md:text-[54px] md:leading-[4.7rem]'>
