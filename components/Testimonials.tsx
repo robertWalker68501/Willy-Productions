@@ -1,31 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useRef } from 'react';
 
 const Testimonials = () => {
-  const [tooltip, setTooltip] = useState({
-    visible: false,
-    x: 0,
-    y: 0,
-    text: '',
-  });
-  const cardRefs = useRef([]);
-
-  const handleMouseMove = (e, index) => {
-    const bounds = cardRefs.current[index].getBoundingClientRect();
-    setTooltip({
-      visible: true,
-      x: e.clientX - bounds.left,
-      y: e.clientY - bounds.top,
-      text: testimonials[index].name,
-    });
-  };
-
-  const handleMouseLeave = () => {
-    setTooltip({ ...tooltip, visible: false });
-  };
-
   const testimonials = [
     {
       name: 'John Doe',
@@ -63,25 +40,8 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            ref={(el) => (cardRefs.current[index] = el)}
-            onMouseMove={(e) => handleMouseMove(e, index)}
-            onMouseLeave={handleMouseLeave}
             className='relative max-w-sm overflow-hidden rounded-lg border border-gray-200 transition-shadow duration-300 hover:shadow-lg'
           >
-            {tooltip.visible && tooltip.text === testimonial.name && (
-              <span
-                className='pointer-events-none absolute rounded bg-blue-500 px-2.5 py-1 text-sm text-nowrap text-white transition-all duration-300'
-                style={{
-                  top: tooltip.y + 8,
-                  left: tooltip.x + 8,
-                  transition: 'all 0.3s ease-out',
-                  animationDelay: '0.2s',
-                }}
-              >
-                {tooltip.text}
-              </span>
-            )}
-
             <div className='flex flex-col items-center justify-center p-8 text-center'>
               <div className='mb-4 text-gray-500'>
                 <h3 className='text-lg font-semibold text-gray-900'>
