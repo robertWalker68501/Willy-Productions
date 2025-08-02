@@ -1,0 +1,52 @@
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
+import { TiThMenu } from 'react-icons/ti';
+import SiteLogo from '@/components/shared/SiteLogo';
+import { Separator } from '@/components/ui/separator';
+import { navLinks } from '@/constants';
+import Link from 'next/link';
+
+const MobileNav = () => {
+  return (
+    <Sheet>
+      <SheetTrigger asChild>
+        <TiThMenu className='size-6 cursor-pointer' />
+      </SheetTrigger>
+      <SheetContent className='w-full'>
+        <SheetHeader>
+          <SheetTitle>
+            <SiteLogo
+              href='/'
+              linkText='Willy Productions'
+            />
+          </SheetTitle>
+          <SheetDescription>
+            The next generation of hard-rock and heavy-metal music production.
+          </SheetDescription>
+        </SheetHeader>
+        <Separator />
+        <div className='flex flex-col items-center justify-center gap-8'>
+          {navLinks.map((link) => {
+            return (
+              <Link
+                key={link.id}
+                href={link.href}
+                className='text-xl font-medium text-gray-700 dark:text-gray-300'
+              >
+                {link.text}
+              </Link>
+            );
+          })}
+        </div>
+      </SheetContent>
+    </Sheet>
+  );
+};
+
+export default MobileNav;
