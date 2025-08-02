@@ -3,7 +3,7 @@ import { FaStar } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section className='relative flex h-screen flex-col items-center justify-center bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/dot-pattern-redical.svg)] bg-cover bg-center pb-16 text-sm text-slate-800 md:px-16 lg:px-24 xl:px-32'>
+    <section className='flex h-screen flex-col items-center justify-center bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/dot-pattern-redical.svg)] bg-cover bg-center pb-16 text-sm text-slate-800 md:px-16 lg:px-24 xl:px-32'>
       <div className='mt-24 flex w-full flex-col items-center justify-between gap-20 lg:flex-row'>
         <div className='max-md:px-4 lg:w-1/2'>
           <h1 className='max-w-lg bg-gradient-to-r from-black to-slate-600 bg-clip-text text-5xl font-semibold text-transparent md:text-[54px] md:leading-[4.7rem]'>
@@ -77,7 +77,7 @@ const Hero = () => {
           </div>
         </div>
         <div className='relative'>
-          <div className='absolute inset-0 z-[-1] rounded-lg bg-gradient-to-r from-[#661FFF] via-[#FF1994] to-[#2D73FF] opacity-50 blur-2xl'></div>
+          {/*<div className='absolute inset-0 z-[-1] rounded-lg bg-gradient-to-r from-[#661FFF] via-[#FF1994] to-[#2D73FF] opacity-50 blur-2xl'></div>*/}
           <img
             className='max-h-[560px] w-full max-w-md rounded-[40px] max-md:px-3 md:mr-10'
             src='/assets/images/hero-image-large-02.jpg'
