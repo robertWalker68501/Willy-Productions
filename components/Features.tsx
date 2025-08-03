@@ -1,7 +1,7 @@
 const Features = () => {
   return (
     <div className=''>
-      <h1 className='mx-auto text-center text-3xl font-semibold'>
+      <h1 className='text-center text-4xl font-bold text-gray-900'>
         Powerful Features
       </h1>
       <p className='mx-auto mt-2 max-w-md text-center text-sm text-slate-500'>
