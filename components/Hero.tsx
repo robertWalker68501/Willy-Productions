@@ -76,7 +76,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className='relative'>
+        <div className='relative rounded-[40px] shadow-md shadow-gray-600'>
           {/*<div className='absolute inset-0 z-[-1] rounded-lg bg-gradient-to-r from-[#661FFF] via-[#FF1994] to-[#2D73FF] opacity-50 blur-2xl'></div>*/}
           <img
             className='max-h-[560px] w-full max-w-md rounded-[40px] max-md:px-3 md:mr-10'

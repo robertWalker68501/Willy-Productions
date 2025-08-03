@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Sheet,
   SheetContent,
@@ -11,20 +13,32 @@ import SiteLogo from '@/components/shared/SiteLogo';
 import { Separator } from '@/components/ui/separator';
 import { navLinks } from '@/constants';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const MobileNav = () => {
+  const [openSheet, setOpenSheet] = useState(false);
+
+  const handleLinkClick = () => {
+    setOpenSheet(false); // Close the sheet
+  };
+
   return (
-    <Sheet>
+    <Sheet
+      open={openSheet}
+      onOpenChange={setOpenSheet}
+    >
       <SheetTrigger asChild>
         <TiThMenu className='size-6 cursor-pointer' />
       </SheetTrigger>
       <SheetContent className='w-full'>
         <SheetHeader>
           <SheetTitle>
-            <SiteLogo
-              href='/'
-              linkText='Willy Productions'
-            />
+            <span onClick={handleLinkClick}>
+              <SiteLogo
+                href='/'
+                linkText='Willy Productions'
+              />
+            </span>
           </SheetTitle>
           <SheetDescription>
             The next generation of hard-rock and heavy-metal music production.
@@ -38,6 +52,7 @@ const MobileNav = () => {
                 key={link.id}
                 href={link.href}
                 className='text-xl font-medium text-gray-700 dark:text-gray-300'
+                onClick={handleLinkClick}
               >
                 {link.text}
               </Link>
