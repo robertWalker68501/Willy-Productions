@@ -1,7 +1,7 @@
 const CallToAction = () => {
   return (
     <div className='mt-40 mb-20 flex flex-col items-center justify-center'>
-      <h2 className='text-2xl font-bold text-gray-800 md:text-4xl'>
+      <h2 className='text-center text-4xl font-bold text-slate-800 dark:text-white'>
         Boost your productivity today
       </h2>
       <p className='mt-4 max-w-xl text-center text-slate-500'>

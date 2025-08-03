@@ -1,6 +1,6 @@
 const Pricing = () => {
   return (
-    <div className='mx-auto max-w-5xl px-4 py-20'>
+    <div className='mx-auto max-w-5xl px-4 pt-20 pb-10'>
       <h1 className='text-center text-3xl leading-tight font-semibold sm:text-4xl md:text-5xl'>
         Pricing
       </h1>
@@ -9,9 +9,9 @@ const Pricing = () => {
         control.
       </p>
       <div className='mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3'>
-        <div className='rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100 p-6'>
+        <div className='rounded-2xl border border-gray-200 p-6'>
           <div className='flex flex-col items-center border-b border-gray-300 pb-6'>
-            <span className='mb-6 text-gray-800'>Free</span>
+            <span className='mb-6 text-white'>Free</span>
             <span className='mb-3 text-4xl font-medium'>$0/mo</span>
             <span className='text-gray-500'>Best for 1-5 users</span>
           </div>
@@ -173,9 +173,9 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className='rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100 p-6'>
+        <div className='rounded-2xl border border-gray-200 p-6'>
           <div className='flex flex-col items-center border-b border-gray-300 pb-6'>
-            <span className='mb-6 text-gray-800'>Pro</span>
+            <span className='mb-6 text-white'>Pro</span>
             <span className='mb-3 text-4xl font-medium'>$79/mo</span>
             <span className='text-gray-500'>Best for 5-50 users</span>
           </div>
@@ -315,9 +315,9 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className='rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100 p-6'>
+        <div className='rounded-2xl border border-gray-200 p-6'>
           <div className='flex flex-col items-center border-b border-gray-300 pb-6'>
-            <span className='mb-6 text-gray-800'>Enterprise</span>
+            <span className='mb-6 text-white'>Enterprise</span>
             <span className='mb-3 text-4xl font-medium'>Contact us</span>
             <span className='text-gray-500'>Best for 50+ users</span>
           </div>

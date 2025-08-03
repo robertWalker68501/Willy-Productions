@@ -28,11 +28,11 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className='mt-40 bg-gray-50 pt-16'>
-      <h1 className='text-center text-4xl font-bold text-gray-900'>
+    <div className='mt-46 pt-16'>
+      <h1 className='text-center text-4xl font-bold text-slate-800 dark:text-white'>
         Testimonials
       </h1>
-      <p className='mt-1 text-center text-gray-500'>
+      <p className='mx-auto mt-2 mb-18 max-w-md text-center text-sm text-slate-500'>
         We have collected some testimonials from our users. They are real people
         who have used our product.
       </p>

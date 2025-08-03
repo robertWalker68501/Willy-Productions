@@ -1,7 +1,7 @@
 const Features = () => {
   return (
     <div className=''>
-      <h1 className='text-center text-4xl font-bold text-gray-900'>
+      <h1 className='text-center text-4xl font-bold text-slate-800 dark:text-white'>
         Powerful Features
       </h1>
       <p className='mx-auto mt-2 max-w-md text-center text-sm text-slate-500'>
@@ -29,7 +29,7 @@ const Features = () => {
             </svg>
           </div>
           <div className='space-y-2'>
-            <h3 className='text-base font-semibold text-slate-700'>
+            <h3 className='text-base font-semibold text-slate-800 dark:text-white'>
               Real-Time Analytics
             </h3>
             <p className='text-sm text-slate-600'>
@@ -63,7 +63,7 @@ const Features = () => {
             </svg>
           </div>
           <div className='space-y-2'>
-            <h3 className='text-base font-semibold text-slate-700'>
+            <h3 className='text-base font-semibold text-slate-800 dark:text-white'>
               Bank-Grade Security
             </h3>
             <p className='text-sm text-slate-600'>
@@ -97,7 +97,7 @@ const Features = () => {
             </svg>
           </div>
           <div className='space-y-2'>
-            <h3 className='text-base font-semibold text-slate-700'>
+            <h3 className='text-base font-semibold text-slate-800 dark:text-white'>
               Customizable Reports
             </h3>
             <p className='text-sm text-slate-600'>

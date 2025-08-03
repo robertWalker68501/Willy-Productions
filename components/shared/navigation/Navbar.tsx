@@ -1,6 +1,7 @@
 import SiteLogo from '@/components/shared/SiteLogo';
 import MobileNav from '@/components/shared/navigation/MobileNav';
 import DesktopNav from '@/components/shared/navigation/DesktopNav';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const Navbar = () => {
   return (
@@ -11,8 +12,9 @@ const Navbar = () => {
       />
 
       {/* Desktop Navigation */}
-      <div className='hidden items-center md:flex'>
+      <div className='hidden items-center gap-6 md:flex'>
         <DesktopNav />
+        <ThemeToggle />
       </div>
 
       {/* Mobile Navigation */}

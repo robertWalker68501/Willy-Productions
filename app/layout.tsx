@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/shared/Header';
 import Footer from '@/components/Footer';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 const montserrat = Montserrat({
   variable: '--font-montserrat',
@@ -22,11 +23,21 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html
+      lang='en'
+      suppressHydrationWarning
+    >
       <body className={`${montserrat.className} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
