@@ -1,7 +1,6 @@
 import SiteLogo from '@/components/shared/SiteLogo';
 import MobileNav from '@/components/shared/navigation/MobileNav';
 import DesktopNav from '@/components/shared/navigation/DesktopNav';
-import ThemeToggle from '@/components/ThemeToggle';
 
 const Navbar = () => {
   return (
