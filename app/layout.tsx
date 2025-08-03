@@ -5,6 +5,8 @@ import './globals.css';
 import Header from '@/components/shared/Header';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import { ClerkProvider } from '@clerk/nextjs';
+import { dark } from '@clerk/themes';
 
 const montserrat = Montserrat({
   variable: '--font-montserrat',
@@ -23,22 +25,28 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html
-      lang='en'
-      suppressHydrationWarning
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+      }}
     >
-      <body className={`${montserrat.className} antialiased`}>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
+      <html
+        lang='en'
+        suppressHydrationWarning
+      >
+        <body className={`${montserrat.className} antialiased`}>
+          <ThemeProvider
+            attribute='class'
+            defaultTheme='system'
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

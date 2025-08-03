@@ -14,6 +14,7 @@ import { Separator } from '@/components/ui/separator';
 import { navLinks } from '@/constants';
 import Link from 'next/link';
 import { useState } from 'react';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const MobileNav = () => {
   const [openSheet, setOpenSheet] = useState(false);
@@ -32,16 +33,19 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className='w-full'>
         <SheetHeader>
-          <SheetTitle>
+          <SheetTitle className='flex items-center justify-evenly'>
             <span onClick={handleLinkClick}>
               <SiteLogo
                 href='/'
                 linkText='Willy Productions'
               />
             </span>
+            <ThemeToggle />
           </SheetTitle>
-          <SheetDescription>
-            The next generation of hard-rock and heavy-metal music production.
+          <SheetDescription className='mt-2 text-center'>
+            <span>
+              The next generation of hard-rock and heavy-metal music production.
+            </span>
           </SheetDescription>
         </SheetHeader>
         <Separator />

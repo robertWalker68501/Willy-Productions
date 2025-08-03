@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { navLinks } from '@/constants';
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+import { Button } from '@/components/ui/button';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const DesktopNav = () => {
   return (
@@ -15,6 +18,21 @@ const DesktopNav = () => {
           </Link>
         );
       })}
+
+      <ThemeToggle />
+
+      <SignedOut>
+        <Button>
+          <Link href='/sign-in'>Login</Link>
+        </Button>
+        <Button>
+          <Link href='/sign-up'>Register</Link>
+        </Button>
+      </SignedOut>
+
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
     </div>
   );
 };
