@@ -13,3 +13,11 @@ export interface SiteLogoProps {
   imgHeight?: number;
   imgClasses?: string;
 }
+
+export interface SongCardProps {
+  title: string;
+  artist: string;
+  album: string;
+  year: string;
+  file: string;
+}

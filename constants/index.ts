@@ -30,3 +30,54 @@ export const navLinks = [
     text: 'Contact',
   },
 ];
+
+export const songs = [
+  {
+    id: '1',
+    title: 'Anchor Point',
+    artist: 'Willy',
+    album: 'Album One',
+    year: '2025',
+    file: 'https://robertwalker.tech/willyProductions/anchor-point.mp3',
+  },
+  {
+    id: '2',
+    title: 'Brain Freeze',
+    artist: 'Willy',
+    album: 'Album One',
+    year: '2025',
+    file: 'https://robertwalker.tech/willyProductions/Brain-Freeze.mp3',
+  },
+  {
+    id: '3',
+    title: 'Breaking the Chains',
+    artist: 'Willy',
+    album: 'Album One',
+    year: '2025',
+    file: 'https://robertwalker.tech/willyProductions/Breaking-the-Chains.mp3',
+  },
+  {
+    id: '4',
+    title: 'Coke Run',
+    artist: 'Willy',
+    album: 'Album One',
+    year: '2025',
+    file: 'https://robertwalker.tech/willyProductions/coke-run.mp3',
+  },
+  {
+    id: '5',
+    title: 'Cokehead Jim',
+    artist: 'Willy',
+    album: 'Album One',
+    year: '2025',
+    file: 'https://robertwalker.tech/willyProductions/cokehead-jim.mp3',
+  },
+  {
+    id: '6',
+    title: 'Doggy Bone',
+    artist: 'Willy',
+    album: 'Album One',
+    year: '2025',
+    file: 'https://robertwalker.tech/willyProductions/Doggy-Bone.mp3',
+  },
+];
